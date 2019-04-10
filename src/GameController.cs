@@ -129,6 +129,12 @@ namespace MyGame
 			SwinGame.RefreshScreen ();
 		}
 
+		/// <summary>
+		/// Show animation and sound for hit sequence.
+		/// </summary>
+		/// <param name="row">Row.</param>
+		/// <param name="column">Column.</param>
+		/// <param name="showAnimation">If set to <c>true</c> show animation.</param>
 		private static void PlayHitSequence (int row, int column, bool showAnimation)
 		{
 			if (showAnimation) {
@@ -140,6 +146,12 @@ namespace MyGame
 			UtilityFunctions.DrawAnimationSequence ();
 		}
 
+		/// <summary>
+		/// Show animation and sound for miss sequence.
+		/// </summary>
+		/// <param name="row">Row.</param>
+		/// <param name="column">Column.</param>
+		/// <param name="showAnimation">If set to <c>true</c> show animation.</param>
 		private static void PlayMissSequence (int row, int column, bool showAnimation)
 		{
 			if (showAnimation) {

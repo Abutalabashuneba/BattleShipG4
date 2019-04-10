@@ -56,6 +56,10 @@ namespace MyGame
 			}
 		}
 
+		/// <summary>
+		/// Random player deployment of the ship.
+		/// </summary>
+		/// <param name="controller">Controller.</param>
 		public Player (BattleShipsGame controller)
 		{
 			// VBConversions Note: Non-static class variable initialization is below.  Class variables cannot be initially assigned non-static values in C#.
@@ -70,7 +74,7 @@ namespace MyGame
 				}
 			}
 
-			RandomizeDeployment ();
+			RandomizeDeployment();
 		}
 
 		/// <summary>
@@ -137,6 +141,10 @@ namespace MyGame
 			}
 		}
 
+		/// <summary>
+		/// The number of Hits the player has made
+		/// </summary>
+		/// <value>The hits.</value>
 		public int Hits {
 			get {
 				return _hits;
@@ -150,10 +158,14 @@ namespace MyGame
 		/// <returns>the number of shots that have missed ships</returns>
 		public int Missed {
 			get {
-				return _misses;
+				 	return _misses;
 			}
 		}
 
+		/// <summary>
+		/// The Total score of player.
+		/// </summary>
+		/// <value>The score.</value>
 		public int Score {
 			get {
 				if (IsDestroyed) {
@@ -174,6 +186,10 @@ namespace MyGame
 			return GetShipEnumerator ();
 		}
 
+		/// <summary>
+		/// Gets the ship enumerator.
+		/// </summary>
+		/// <returns>The ship enumerator.</returns>
 		public IEnumerator<Ship> GetShipEnumerator ()
 		{
 			Ship [] result = new Ship [_Ships.Values.Count + 1];
@@ -194,6 +210,10 @@ namespace MyGame
 			return GetEnumerator1 ();
 		}
 
+		/// <summary>
+		/// Gets the enumerator1.
+		/// </summary>
+		/// <returns>The enumerator1.</returns>
 		public IEnumerator<Ship> GetEnumerator1 ()
 		{
 			Ship [] result = new Ship [_Ships.Values.Count + 1];
@@ -234,6 +254,9 @@ namespace MyGame
 			return result;
 		}
 
+		/// <summary>
+		/// Randomizes the deployment.
+		/// </summary>
 		public virtual void RandomizeDeployment ()
 		{
 			bool placementSuccessful = false;
@@ -272,6 +295,10 @@ namespace MyGame
 			}
 		}
 
+		/// <summary>
+		/// System.s the collections. IE numerable. get enumerator.
+		/// </summary>
+		/// <returns>The collections. IE numerable. get enumerator.</returns>
 		IEnumerator IEnumerable.GetEnumerator ()
 		{
 			throw new NotImplementedException ();

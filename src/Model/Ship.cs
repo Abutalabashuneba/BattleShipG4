@@ -79,18 +79,31 @@ namespace MyGame
 			}
 		}
 
+		/// <summary>
+		/// The coulumn location of the ship
+		/// </summary>
+		/// <value>The topmost location of the ship.</value>
+		/// <returns>the column of the ship</returns>
 		public int Column {
 			get {
 				return _col;
 			}
 		}
 
+		/// <summary>
+		/// The direction of the ship.
+		/// </summary>
+		/// <value>The direction of the ship.</value>
 		public Direction Direction {
 			get {
 				return _direction;
 			}
 		}
 
+		/// <summary>
+		/// Select the ship.
+		/// </summary>
+		/// <param name="ship">Ship.</param>
 		public Ship (ShipName ship)
 		{
 			_shipName = ship;
@@ -119,6 +132,9 @@ namespace MyGame
 			_tiles.Clear ();
 		}
 
+		/// <summary>
+		/// Count the hit.
+		/// </summary>
 		public void Hit ()
 		{
 			_hitsTaken = _hitsTaken + 1;
@@ -134,6 +150,10 @@ namespace MyGame
 			}
 		}
 
+		/// <summary>
+		/// IsDestroyed returns if the ships is destroyed, if its destroyed it has fully hit of the tile.
+		/// </summary>
+		/// <value><c>true</c> if is destroyed; otherwise, <c>false</c>.</value>
 		public bool IsDestroyed {
 			get {
 				return Hits == Size;
