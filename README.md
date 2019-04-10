@@ -10,6 +10,6 @@ Requirements:
 To get started:
 
 1. Clone project
-1. Open command line and cd to project root
-1. Build using `build.sh`
-1. Run using `run.sh` -- you can also find the executable in the bin folder, but this script makes it simpler to build and run from the command line.
+1. Open Xamarin and open the solution file
+1. Build with Xamarin
+1. Run using Xamarin and a window should be displayed.
