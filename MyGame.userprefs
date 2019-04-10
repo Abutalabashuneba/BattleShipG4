@@ -5,32 +5,15 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\EndingGameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShipG4 Status">
     <Files>
-      <File FileName="src\Model\AIOption.cs" Line="8" Column="34" />
-      <File FileName="src\Model\AttackResult.cs" Line="115" Column="2" />
-      <File FileName="src\Model\BattleShipsGame.cs" Line="110" Column="2" />
-      <File FileName="src\Model\Direction.cs" Line="15" Column="9" />
-      <File FileName="src\Model\ISeaGrid.cs" Line="50" Column="1" />
-      <File FileName="src\Model\ResultOfAttack.cs" Line="33" Column="2" />
-      <File FileName="src\Model\SeaGrid.cs" Line="24" Column="25" />
-      <File FileName="src\Model\SeaGridAdapter.cs" Line="20" Column="32" />
-      <File FileName="src\Model\Ship.cs" Line="157" Column="2" />
-      <File FileName="src\Model\ShipName.cs" Line="15" Column="2" />
-      <File FileName="src\Model\Tile.cs" Line="139" Column="2" />
-      <File FileName="src\Model\TileView.cs" Line="33" Column="2" />
-      <File FileName="src\Model\Player.cs" Line="24" Column="50" />
-      <File FileName="src\Model\AIPlayer.cs" Line="14" Column="15" />
-      <File FileName="src\Model\AIHardPlayer.cs" Line="3" Column="14" />
-      <File FileName="src\Model\AIMediumPlayer.cs" Line="3" Column="14" />
-      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
       <File FileName="src\DeploymentController.cs" Line="101" Column="36" />
-      <File FileName="src\UtilityFunctions.cs" Line="34" Column="32" />
-      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="1" Column="1" />
-      <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="src\GameResources.cs" Line="1" Column="1" />
-      <File FileName="src\EndingGameController.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="328" Column="60" />
+      <File FileName="src\Model\AIMediumPlayer.cs" Line="128" Column="2" />
+      <File FileName="src\Model\AIPlayer.cs" Line="144" Column="14" />
+      <File FileName="src\Model\Player.cs" Line="2" Column="26" />
+      <File FileName="src\GameController.cs" Line="8" Column="39" />
+      <File FileName="BattleShipG4 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
