@@ -165,7 +165,10 @@ namespace MyGame
 				newShip.Remove (); // if fails remove the ship
 				throw new ApplicationException (e.Message);
 			} finally {
-				Changed?.Invoke (this, EventArgs.Empty);
+				if (Changed != null) {
+					Changed (this, EventArgs.Empty);
+				}
+				//Changed?.Invoke (this, EventArgs.Empty);
 			}
 		}
 
@@ -199,7 +202,9 @@ namespace MyGame
 				// else hit but not destroyed
 				return new AttackResult (ResultOfAttack.Hit, "hit something!", row, col);
 			} finally {
-				Changed?.Invoke (this, EventArgs.Empty);
+				if (Changed != null) {
+					Changed (this, EventArgs.Empty);
+				}
 			}
 		}
 	}
