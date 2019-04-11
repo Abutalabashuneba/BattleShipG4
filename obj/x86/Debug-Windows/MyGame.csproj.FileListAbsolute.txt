@@ -280,3 +280,4 @@ C:\Users\Winterkho\Desktop\dev project\Week4\Pass Tasks 4.1 battleships(1)\Battl
 C:\Users\Winterkho\Desktop\dev project\Week4\Pass Tasks 4.1 battleships(1)\BattleShipG4\bin\Debug\SwinGame.dll
 C:\Users\Winterkho\Desktop\dev project\Week4\Pass Tasks 4.1 battleships(1)\BattleShipG4\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\Winterkho\Desktop\dev project\Week4\Pass Tasks 4.1 battleships(1)\BattleShipG4\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\100086686\Desktop\BattleShipG4\obj\x86\Debug-Windows\MyGame.exe
