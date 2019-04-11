@@ -152,8 +152,8 @@ namespace MyGame
 			Target t = default (Target);
 			t = _Targets.Pop ();
 
-			row = System.Convert.ToInt32 (t.ShotAt.Row);
-			column = System.Convert.ToInt32 (t.ShotAt.Column);
+			row = Convert.ToInt32 (t.ShotAt.Row);
+			column = Convert.ToInt32 (t.ShotAt.Column);
 			_CurrentTarget = t;
 		}
 
@@ -164,8 +164,8 @@ namespace MyGame
 		/// <param name="column">the generated column</param>
 		private void SearchCoords (ref int row, ref int column)
 		{
-			row = System.Convert.ToInt32 (_Random.Next (0, EnemyGrid.Height));
-			column = System.Convert.ToInt32 (_Random.Next (0, EnemyGrid.Width));
+			row = Convert.ToInt32 (_Random.Next (0, EnemyGrid.Height));
+			column = Convert.ToInt32 (_Random.Next (0, EnemyGrid.Width));
 			_CurrentTarget = new Target (new Location (row, column), null);
 		}
 
@@ -178,19 +178,30 @@ namespace MyGame
 		/// <param name="result">the result from that hit</param>
 		protected override void ProcessShot (int row, int col, AttackResult result)
 		{
-			if (result.Value == ResultOfAttack.Miss) {
-				_CurrentTarget = null;
-			} else if (result.Value == ResultOfAttack.Hit) {
-				ProcessHit (row, col);
-			} else if (result.Value == ResultOfAttack.Destroyed) {
-				ProcessDestroy (row, col, result.Ship);
-			} else if (result.Value == ResultOfAttack.ShotAlready) {
-				throw (new ApplicationException ("Error in AI"));
+			switch (result.Value) {
+			case ResultOfAttack.Miss: {
+					_CurrentTarget = null;
+					break;
+				}
+
+			case ResultOfAttack.Hit: {
+					ProcessHit (row, col);
+					break;
+				}
+
+			case ResultOfAttack.Destroyed: {
+					ProcessDestroy (row, col, result.Ship);
+					break;
+				}
+
+			case ResultOfAttack.ShotAlready: {
+					throw new ApplicationException ("Error in AI");
+					//break;
+				}
 			}
 
-			if (_Targets.Count == 0) {
+			if (_Targets.Count == 0)
 				_CurrentState = AIStates.Searching;
-			}
 		}
 
 		/// <summary>
@@ -310,10 +321,10 @@ namespace MyGame
 
 			//if the ship is lying on the same row, call MoveToTopOfStack to optimise on the row
 			if (_CurrentTarget.SameRow) {
-				MoveToTopOfStack (System.Convert.ToInt32 (_CurrentTarget.ShotAt.Row), -1);
+				MoveToTopOfStack (Convert.ToInt32 (_CurrentTarget.ShotAt.Row), -1);
 			} else if (_CurrentTarget.SameColumn) {
 				//else if the ship is lying on the same column, call MoveToTopOfStack to optimise on the column
-				MoveToTopOfStack (-1, System.Convert.ToInt32 (_CurrentTarget.ShotAt.Column));
+				MoveToTopOfStack (-1, Convert.ToInt32 (_CurrentTarget.ShotAt.Column));
 			}
 		}
 
