@@ -88,18 +88,28 @@ namespace MyGame
 			_theGame = new BattleShipsGame ();
 
 			// create the players
-			switch (_aiSetting) {
-			case AIOption.Medium: {
+			switch (_aiSetting) 
+			{
+				case AIOption.Easy: 
+				{
+					_ai = new AIEasyPlayer (_theGame);
+					break;
+				}
+
+				case AIOption.Medium: 
+				{
 					_ai = new AIMediumPlayer (_theGame);
 					break;
 				}
 
-			case AIOption.Hard: {
+				case AIOption.Hard: 
+				{
 					_ai = new AIHardPlayer (_theGame);
 					break;
 				}
 
-			default: {
+				default: 
+				{
 					_ai = new AIHardPlayer (_theGame);
 					break;
 				}

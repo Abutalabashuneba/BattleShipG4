@@ -7,8 +7,9 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="BattleShipG4 Status">
     <Files>
-      <File FileName="src\GameController.cs" Line="30" Column="3" />
-      <File FileName="src\HighScoreController.cs" Line="196" Column="19" />
+      <File FileName="src\GameController.cs" Line="94" Column="6" />
+      <File FileName="src\Model\AIEasyPlayer.cs" Line="106" Column="1" />
+      <File FileName="src\MenuController.cs" Line="299" Column="2" />
       <File FileName="BattleShipG4 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
