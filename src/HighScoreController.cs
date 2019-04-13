@@ -192,7 +192,8 @@ namespace MyGame
 				_Scores.RemoveAt (_Scores.Count - 1);
 				_Scores.Add (s);
 				_Scores.Sort ();
-
+				//add SaveScore method
+				SaveScores ();
 				GameController.EndCurrentState ();
 			}
 		}
