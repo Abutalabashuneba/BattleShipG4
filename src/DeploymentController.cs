@@ -57,9 +57,9 @@ namespace MyGame
 			if (SwinGame.KeyTyped (KeyCode.vk_ESCAPE))
 				GameController.AddNewState (GameState.ViewingGameMenu);
 
-			if (SwinGame.KeyTyped (KeyCode.vk_UP) | SwinGame.KeyTyped (KeyCode.vk_DOWN))
+			if (SwinGame.KeyTyped (KeyCode.vk_UP) )
 				_currentDirection = Direction.UpDown;
-			if (SwinGame.KeyTyped (KeyCode.vk_LEFT) | SwinGame.KeyTyped (KeyCode.vk_RIGHT))
+			if (SwinGame.KeyTyped (KeyCode.vk_RIGHT))
 				_currentDirection = Direction.LeftRight;
 
 			if (SwinGame.KeyTyped (KeyCode.vk_r))
