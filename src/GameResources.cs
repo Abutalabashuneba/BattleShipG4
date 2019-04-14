@@ -75,7 +75,7 @@ namespace MyGame
 		/// </summary>
 		private static void LoadMusic ()
 		{
-			NewMusic ("Background", "horrordrone.mp3");
+			NewMusic ("Background","Move-it-Out.mp3");
 		}
 
 		/// <summary>
