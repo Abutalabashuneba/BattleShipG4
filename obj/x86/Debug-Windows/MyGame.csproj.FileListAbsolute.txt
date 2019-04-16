@@ -328,3 +328,33 @@ C:\Users\Winterkho\Documents\GitHub\BattleShipG4\bin\Debug\MyGame.exe
 C:\Users\Winterkho\Documents\GitHub\BattleShipG4\bin\Debug\SwinGame.dll
 C:\Users\Winterkho\Documents\GitHub\BattleShipG4\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\Winterkho\Documents\GitHub\BattleShipG4\obj\x86\Debug-Windows\MyGame.exe
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\animations\startup.txt
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\bundles\FileDialog.txt
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\bundles\splash.txt
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\fonts\arial.ttf
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\fonts\cour.ttf
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\fdFile.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\fdFolder.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\FileDialog_Active.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\FileDialog_Background.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\FileDialog_Inactive.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\FileDialog_Scroll.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\Swinburne.jpg
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\images\SwinGameAni.png
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\panels\FileDialog.txt
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\sounds\error.wav
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\sounds\SwinGameStart.wav
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\SwinGame.icns
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\Resources\SwinGame.ico
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\MyGame.exe
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\mscorlib.dll
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\SwinGame.dll
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normidna.nlp
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfc.nlp
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfd.nlp
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfkc.nlp
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfkd.nlp
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\obj\x86\Debug-Windows\MyGame.exe

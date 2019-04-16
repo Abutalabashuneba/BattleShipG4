@@ -189,7 +189,6 @@
     <WinLibraryFiles Include="lib\win\swingame.rc" />
     <WinLibraryFiles Include="lib\win\zlib1.dll" />
     <None Include="Resources\sounds\hit.wav" />
-    <None Include="Resources\sounds\horrordrone.mp3" />
     <None Include="Resources\sounds\lose.wav" />
     <None Include="Resources\sounds\sink.wav" />
     <None Include="Resources\sounds\watershot.wav" />
@@ -222,6 +221,10 @@
     <None Include="Resources\fonts\ffaccess.ttf" />
     <None Include="Resources\animations\.DS_Store" />
     <None Include="Resources\animations\splash.txt" />
+    <None Include="Resources\sounds\horrordrone.mp3" />
+    <None Include="Resources\sounds\Move-it-Out.mp3" />
+    <None Include="Resources\sounds\Click.mp3" />
+    <None Include="Resources\sounds\siren.wav" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

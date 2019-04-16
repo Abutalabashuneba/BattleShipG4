@@ -131,6 +131,7 @@ namespace MyGame
 
 		private static void EndGame ()
 		{
+			
 			//RemoveHandler _human.PlayerGrid.Changed, AddressOf GridChanged
 			_ai.PlayerGrid.Changed -= GridChanged;
 			_theGame.AttackCompleted -= AttackCompleted;
@@ -253,6 +254,8 @@ namespace MyGame
 			//deploy the players
 			_theGame.AddDeployedPlayer (_human);
 			_theGame.AddDeployedPlayer (_ai);
+
+			Audio.PlaySoundEffect (GameResources.GameSound ("Siren"));
 
 			SwitchState (GameState.Discovering);
 		}
