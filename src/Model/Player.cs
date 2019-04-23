@@ -241,15 +241,18 @@ namespace MyGame
 		/// <returns>the result of the attack</returns>
 		internal AttackResult Shoot (int row, int col)
 		{
-			_shots++;
+			//_shots++;
 			AttackResult result = default (AttackResult);
 			result = EnemyGrid.HitTile (row, col);
 
 			if ((result.Value == ResultOfAttack.Destroyed) || (result.Value == ResultOfAttack.Hit)) {
+				_shots++;
 				_hits++;
 			} else if (result.Value == ResultOfAttack.Miss) {
+				_shots++;
 				_misses++;
-			}
+			} 
+				
 
 			return result;
 		}
