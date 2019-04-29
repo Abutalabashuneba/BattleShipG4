@@ -15,7 +15,7 @@ namespace MyGame
 	{
 		private const int NAME_WIDTH = 3;
 		private const int SCORES_LEFT = 490;
-
+		private const int MAIN_MENU = 0;
 		/// <summary>
 		/// The score structure is used to keep the name and
 		/// score of the top players together.
@@ -121,7 +121,7 @@ namespace MyGame
 				LoadScores ();
 
 			SwinGame.DrawText ("<-   High Scores   ->", Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_HEADING);
-
+			MenuController.DrawButtons (MAIN_MENU);
 			// For all of the scores
 			int i;
 			var loopTo = _Scores.Count - 1;
