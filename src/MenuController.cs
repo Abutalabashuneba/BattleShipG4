@@ -30,11 +30,11 @@ namespace MyGame
 		/// </remarks>
 		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
 
-		private const int MENU_TOP = 575;
-		private const int MENU_LEFT = 30;
+		private const int MENU_TOP = 570;
+		private const int MENU_LEFT = 48;
 		private const int MENU_GAP = 0;
 		private const int BUTTON_WIDTH = 175;
-		private const int BUTTON_HEIGHT = 15;
+		private const int BUTTON_HEIGHT = 20;
 		private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
 		private const int TEXT_OFFSET = 0;
 
