@@ -13,9 +13,9 @@ namespace MyGame
 	/// </remarks>
 	static class HighScoreController
 	{
-		private const int NAME_WIDTH = 3;
+		private const int NAME_WIDTH = 6;
 		private const int SCORES_LEFT = 490;
-
+		private const int MAIN_MENU = 0;
 		/// <summary>
 		/// The score structure is used to keep the name and
 		/// score of the top players together.
@@ -120,8 +120,8 @@ namespace MyGame
 			if (_Scores.Count == 0)
 				LoadScores ();
 
-			SwinGame.DrawText ("   High Scores   ", Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_HEADING);
-
+			SwinGame.DrawText ("<-   High Scores   ->", Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_HEADING);
+			MenuController.DrawButtons (MAIN_MENU);
 			// For all of the scores
 			int i;
 			var loopTo = _Scores.Count - 1;
@@ -132,9 +132,9 @@ namespace MyGame
 
 				// for scores 1 - 9 use 01 - 09
 				if (i < 9)
-					SwinGame.DrawText (" " + (i + 1) + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+					SwinGame.DrawText (" " + (i + 1) + ":   " + s.Name + "     " + s.Value, Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 				else
-					SwinGame.DrawText (i + 1 + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+					SwinGame.DrawText (i + 1 + ":   " + s.Name + "     " + s.Value, Color.White, GameResources.GameFont ("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 			}
 		}
 
@@ -186,8 +186,8 @@ namespace MyGame
 
 				s.Name = SwinGame.TextReadAsASCII ();
 
-				if (s.Name.Length < 3)
-					s.Name = s.Name + new string (System.Convert.ToChar (" "), 3 - s.Name.Length);
+				if (s.Name.Length < 6)
+					s.Name = s.Name + new string (System.Convert.ToChar (" "), 6 - s.Name.Length);
 
 				_Scores.RemoveAt (_Scores.Count - 1);
 				_Scores.Add (s);

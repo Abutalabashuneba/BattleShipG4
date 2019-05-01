@@ -22,9 +22,9 @@ namespace MyGame
 		private static void LoadFonts ()
 		{
 			NewFont ("ArialLarge", "arial.ttf", 80);
-			NewFont ("Courier", "cour.ttf", 14);
+			NewFont ("Courier", "Game Played.otf", 16);
 			NewFont ("CourierSmall", "cour.ttf", 8);
-			NewFont ("Menu", "ffaccess.ttf", 8);
+			NewFont ("Menu", "ffaccess.ttf", 12);
 		}
 
 		/// <summary>

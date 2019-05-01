@@ -30,11 +30,11 @@ namespace MyGame
 		/// </remarks>
 		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
 
-		private const int MENU_TOP = 575;
-		private const int MENU_LEFT = 30;
+		private const int MENU_TOP = 570;
+		private const int MENU_LEFT = 48;
 		private const int MENU_GAP = 0;
-		private const int BUTTON_WIDTH = 75;
-		private const int BUTTON_HEIGHT = 15;
+		private const int BUTTON_WIDTH = 175;
+		private const int BUTTON_HEIGHT = 20;
 		private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
 		private const int TEXT_OFFSET = 0;
 
@@ -129,7 +129,7 @@ namespace MyGame
 		public static void DrawMainMenu ()
 		{
 			// Clears the Screen to Black
-			// SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50)
+			SwinGame.DrawText ("Main Menu", MENU_COLOR, GameResources.GameFont ("Courier"), 420, 290);
 
 			DrawButtons (MAIN_MENU);
 		}
@@ -140,7 +140,7 @@ namespace MyGame
 		public static void DrawGameMenu ()
 		{
 			// Clears the Screen to Black
-			// SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
+			SwinGame.DrawText ("Paused", MENU_COLOR, GameResources.GameFont ("Courier"), 420, 290);
 
 			DrawButtons (GAME_MENU);
 		}
@@ -154,7 +154,7 @@ namespace MyGame
 		public static void DrawSettings ()
 		{
 			// Clears the Screen to Black
-			// SwinGame.DrawText("Settings", Color.White, GameFont("ArialLarge"), 50, 50)
+			SwinGame.DrawText ("Setting", MENU_COLOR, GameResources.GameFont ("Courier"), 420, 290);
 
 			DrawButtons (MAIN_MENU);
 			DrawButtons (SETUP_MENU, 1, 1);
@@ -164,7 +164,7 @@ namespace MyGame
 		/// Draw the buttons associated with a top level menu.
 		/// </summary>
 		/// <param name="menu">the index of the menu to draw</param>
-		private static void DrawButtons (int menu)
+		public static void DrawButtons (int menu)
 		{
 			DrawButtons (menu, 0, 0);
 		}
