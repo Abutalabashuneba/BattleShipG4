@@ -223,8 +223,8 @@
     <None Include="Resources\animations\splash.txt" />
     <None Include="Resources\sounds\horrordrone.mp3" />
     <None Include="Resources\sounds\Move-it-Out.mp3" />
-    <None Include="Resources\sounds\Click.mp3" />
     <None Include="Resources\sounds\siren.wav" />
+    <None Include="Resources\sounds\Click.wav" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

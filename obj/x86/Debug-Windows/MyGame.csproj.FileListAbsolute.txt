@@ -358,3 +358,33 @@ L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfkc.nl
 L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\bin\Debug\normnfkd.nlp
 L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 L:\Swinburne CS Degree Sem 3\DP Week 6\BattleShipG4-master\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\animations\startup.txt
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\bundles\splash.txt
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\fdFile.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\fdFolder.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\FileDialog_Scroll.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\sounds\error.wav
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\SwinGame.icns
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\Resources\SwinGame.ico
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\MyGame.exe
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\mscorlib.dll
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\SwinGame.dll
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\normidna.nlp
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\normnfc.nlp
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\normnfd.nlp
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\normnfkc.nlp
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\bin\Debug\normnfkd.nlp
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\BEAR TANG\Desktop\DP\BattleShipG4\obj\x86\Debug-Windows\MyGame.exe

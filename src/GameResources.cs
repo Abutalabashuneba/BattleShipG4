@@ -68,6 +68,7 @@ namespace MyGame
 			NewSound ("Miss", "watershot.wav");
 			NewSound ("Winner", "winner.wav");
 			NewSound ("Lose", "lose.wav");
+            NewSound ("Play", "Click.wav");
 		}
 
 		/// <summary>
@@ -76,7 +77,6 @@ namespace MyGame
 		private static void LoadMusic ()
 		{
 			NewMusic ("Background", "Move-it-Out.mp3");
-			NewMusic ("Play", "Click.mp3");
 		}
 
 		/// <summary>

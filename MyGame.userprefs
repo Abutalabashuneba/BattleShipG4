@@ -5,7 +5,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShipG4 Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameResources.cs">
     <Files>
       <File FileName="src\GameController.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIEasyPlayer.cs" Line="106" Column="1" />
@@ -15,7 +15,7 @@
       <File FileName="src\Model\SeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
       <File FileName="src\GameLogic.cs" Line="15" Column="4" />
-      <File FileName="src\GameResources.cs" Line="1" Column="1" />
+      <File FileName="src\GameResources.cs" Line="120" Column="47" />
       <File FileName="src\GameState.cs" Line="1" Column="1" />
       <File FileName="src\UtilityFunctions.cs" Line="1" Column="1" />
       <File FileName="src\Model\BattleShipsGame.cs" Line="1" Column="1" />
@@ -27,11 +27,10 @@
       <File FileName="src\Model\TileView.cs" Line="1" Column="1" />
       <File FileName="src\Model\ShipName.cs" Line="1" Column="1" />
       <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="1" Column="1" />
+      <File FileName="src\DeploymentController.cs" Line="112" Column="7" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
       <File FileName="src\Model\ResultOfAttack.cs" Line="1" Column="1" />
-      <File FileName="BattleShipG4 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
