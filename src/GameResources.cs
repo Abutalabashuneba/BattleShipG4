@@ -33,9 +33,10 @@ namespace MyGame
 		private static void LoadImages ()
 		{
 			// Backgrounds
-			NewImage ("Menu", "main_page.jpg");
+			NewImage ("Menu", "Menu.jpg");
 			NewImage ("Discovery", "discover.jpg");
 			NewImage ("Deploy", "deploy.jpg");
+			NewImage ("High", "high.jpg");
 
 			// Deployment
 			NewImage ("LeftRightButton", "deploy_dir_button_horiz.png");
@@ -68,7 +69,6 @@ namespace MyGame
 			NewSound ("Miss", "watershot.wav");
 			NewSound ("Winner", "winner.wav");
 			NewSound ("Lose", "lose.wav");
-            NewSound ("Play", "Click.wav");
 		}
 
 		/// <summary>
@@ -77,6 +77,7 @@ namespace MyGame
 		private static void LoadMusic ()
 		{
 			NewMusic ("Background", "Move-it-Out.mp3");
+			NewMusic ("Play", "Click.mp3");
 		}
 
 		/// <summary>

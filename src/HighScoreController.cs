@@ -14,7 +14,7 @@ namespace MyGame
 	static class HighScoreController
 	{
 		private const int NAME_WIDTH = 6;
-		private const int SCORES_LEFT = 490;
+		private const int SCORES_LEFT = 325;
 		private const int MAIN_MENU = 0;
 		/// <summary>
 		/// The score structure is used to keep the name and

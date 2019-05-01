@@ -107,9 +107,7 @@ namespace MyGame
 				if (col >= 0 & col < GameController.HumanPlayer.PlayerGrid.Width) {
 					// if in the area try to deploy
 					try {
-						Audio.PlaySoundEffect (GameResources.GameSound ("Play"));
 						GameController.HumanPlayer.PlayerGrid.MoveShip (row, col, _selectedShip, _currentDirection);
-
 					} catch (Exception ex) {
 						Audio.PlaySoundEffect (GameResources.GameSound ("Error"));
 						UtilityFunctions.Message = ex.Message;
@@ -142,10 +140,8 @@ namespace MyGame
 				}
 			}
 
-			if (GameController.HumanPlayer.ReadyToDeploy) {
+			if (GameController.HumanPlayer.ReadyToDeploy)
 				SwinGame.DrawBitmap (GameResources.GameImage ("PlayButton"), PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP);
-
-			}
 
 			SwinGame.DrawBitmap (GameResources.GameImage ("RandomButton"), RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP);
 
