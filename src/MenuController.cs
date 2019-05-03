@@ -28,12 +28,12 @@ namespace MyGame
 		/// <remarks>
 		/// These are the text captions for the menu items.
 		/// </remarks>
-		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
+		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT", "Guide" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
 
 		private const int MENU_TOP = 570;
 		private const int MENU_LEFT = 48;
 		private const int MENU_GAP = 0;
-		private const int BUTTON_WIDTH = 175;
+		private const int BUTTON_WIDTH = 140;
 		private const int BUTTON_HEIGHT = 20;
 		private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
 		private const int TEXT_OFFSET = 0;
@@ -46,6 +46,8 @@ namespace MyGame
 		private const int MAIN_MENU_SETUP_BUTTON = 1;
 		private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
 		private const int MAIN_MENU_QUIT_BUTTON = 3;
+		//Guide
+		private const int MAIN_MENU_GUIDE_BUTTON = 4;
 
 		private const int SETUP_MENU_EASY_BUTTON = 0;
 		private const int SETUP_MENU_MEDIUM_BUTTON = 1;
@@ -56,6 +58,8 @@ namespace MyGame
 		private const int GAME_MENU_SURRENDER_BUTTON = 1;
 		private const int GAME_MENU_QUIT_BUTTON = 2;
 
+		//new color
+		private readonly static Color GUIDE_COLOR = SwinGame.RGBAColor (255, 255, 255, 0);
 		private readonly static Color MENU_COLOR = SwinGame.RGBAColor (0, 0, 0, 255);
 		private readonly static Color HIGHLIGHT_COLOR = SwinGame.RGBAColor (1, 57, 86, 255);
 
@@ -144,6 +148,15 @@ namespace MyGame
 
 			DrawButtons (GAME_MENU);
 		}
+
+		public static void DrawGuideMenu ()
+		{
+			// Clears the Screen to Black
+			SwinGame.DrawText ("Guide", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 0);
+
+			DrawButtons (MAIN_MENU);
+		}
+
 
 		/// <summary>
 		/// Draws the settings menu to the screen.
@@ -274,7 +287,14 @@ namespace MyGame
 					GameController.EndCurrentState ();
 					break;
 				}
+
+				case MAIN_MENU_GUIDE_BUTTON: {
+					GameController.AddNewState (GameState.Guide);
+					break;
+				}
 			}
+
+
 		}
 
 		/// <summary>

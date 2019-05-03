@@ -360,6 +360,11 @@ namespace MyGame
 					HighScoreController.HandleHighScoreInput ();
 					break;
 				}
+
+				case GameState.Guide: {
+					MenuController.HandleMainMenuInput ();
+					break;
+				}
 			}
 
 			UtilityFunctions.UpdateAnimations ();
@@ -408,6 +413,11 @@ namespace MyGame
 
 			case GameState.ViewingHighScores: {
 					HighScoreController.DrawHighScores ();
+					break;
+				}
+
+				case GameState.Guide: {
+					MenuController.DrawGuideMenu ();
 					break;
 				}
 			}

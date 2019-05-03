@@ -265,6 +265,11 @@ namespace MyGame
 					break;
 				}
 
+				case GameState.Guide: {
+					SwinGame.DrawBitmap (GameResources.GameImage("High"),0,0);
+					break;
+				}
+
 			default: {
 					SwinGame.ClearScreen ();
 					break;
