@@ -131,6 +131,8 @@ namespace MyGame
 					SearchCoords (ref row, ref column);
 					break;
 				case AIStates.TargetingShip:
+					TargetCoords (ref row, ref column);
+					break;
 				case AIStates.HittingShip:
 					TargetCoords (ref row, ref column);
 					break;
@@ -298,8 +300,8 @@ namespace MyGame
 
 			//Uses _CurrentTarget as the source
 			AddTarget (row - 1, col);
-			AddTarget (row, col - 1);
 			AddTarget (row + 1, col);
+			AddTarget (row, col - 1);
 			AddTarget (row, col + 1);
 
 			if (_CurrentState == AIStates.Searching) {

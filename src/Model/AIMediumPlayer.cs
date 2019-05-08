@@ -103,8 +103,6 @@ namespace MyGame
 
 			if (result.Value == ResultOfAttack.Hit) {
 				_CurrentState = AIStates.TargetingShip;
-				AddTarget (row - 1, col);
-				AddTarget (row, col - 1);
 				AddTarget (row + 1, col);
 				AddTarget (row, col + 1);
 			} else if (result.Value == ResultOfAttack.ShotAlready) {
