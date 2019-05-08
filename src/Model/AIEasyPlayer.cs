@@ -80,10 +80,6 @@ namespace MyGame
 
 			if (result.Value == ResultOfAttack.Hit) {
 				_CurrentState = AIStates.Searching;
-				AddTarget (row - 1, col);
-				AddTarget (row, col - 1);
-				AddTarget (row + 1, col);
-				AddTarget (row, col + 1);
 			} else if (result.Value == ResultOfAttack.ShotAlready) {
 				throw (new ApplicationException ("Error in AI"));
 			}

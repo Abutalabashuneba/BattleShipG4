@@ -21,7 +21,7 @@ namespace MyGame
 	{
 		private readonly int _RowValue;        // the row value of the tile
 		private readonly int _ColumnValue;     // the column value of the tile
-		private Ship _Ship = null/* TODO Change to default(_) if this is not a reference type */;     // the ship the tile belongs to
+		private Ship _Ship = default(Ship) /* TODO Change to default(_) if this is not a reference type */;     // the ship the tile belongs to
 		private bool _Shot = false;    // the tile has been shot at
 
 		/// <summary>
