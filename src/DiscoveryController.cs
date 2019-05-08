@@ -77,6 +77,9 @@ namespace MyGame
 			SwinGame.DrawText (GameController.HumanPlayer.Shots.ToString (), Color.White, GameResources.GameFont ("Menu"), SCORES_LEFT, SHOTS_TOP);
 			SwinGame.DrawText (GameController.HumanPlayer.Hits.ToString (), Color.White, GameResources.GameFont ("Menu"), SCORES_LEFT, HITS_TOP);
 			SwinGame.DrawText (GameController.HumanPlayer.Missed.ToString (), Color.White, GameResources.GameFont ("Menu"), SCORES_LEFT, SPLASH_TOP);
+			SwinGame.DrawText ("Ship Left: " + GameController._count, Color.WhiteSmoke, GameResources.GameFont ("ShipCount"), SCORES_LEFT, 95);
+
+
 		}
 	}
 

@@ -25,6 +25,7 @@ namespace MyGame
 			NewFont ("Courier", "Game Played.otf", 16);
 			NewFont ("CourierSmall", "cour.ttf", 8);
 			NewFont ("Menu", "ffaccess.ttf", 12);
+			NewFont ("ShipCount", "Game Played.otf", 18);
 		}
 
 		/// <summary>

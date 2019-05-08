@@ -28,7 +28,7 @@ namespace MyGame
 		/// <remarks>
 		/// These are the text captions for the menu items.
 		/// </remarks>
-		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT", "Guide" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
+		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT", "GUIDE" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
 
 		private const int MENU_TOP = 570;
 		private const int MENU_LEFT = 48;
@@ -152,8 +152,13 @@ namespace MyGame
 		public static void DrawGuideMenu ()
 		{
 			// Clears the Screen to Black
-			SwinGame.DrawText ("Guide", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 0);
-
+			SwinGame.DrawText ("Guide", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 10);
+			SwinGame.DrawText ("1.Deploy your ships or select deployment with the button", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 40);
+			SwinGame.DrawText ("2.Guess the enemy ship by selecting the grid with right mouse click", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 70);
+			SwinGame.DrawText ("3.Wait till the end of enemey turn", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 100);
+			SwinGame.DrawText ("4.The game is over once all ships are destroyed from either side.", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 130);
+			SwinGame.DrawText ("5.User can pause the game by pressing escape key and stop the game from the", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 160);
+			SwinGame.DrawText ("    pause menu", GUIDE_COLOR, GameResources.GameFont ("Courier"), 30, 190);
 			DrawButtons (MAIN_MENU);
 		}
 

@@ -30,6 +30,7 @@ namespace MyGame
 
 		private static AIOption _aiSetting;
 
+		public static int _count;
 		/// <summary>
 		/// Returns the current state of the game, indicating which screen is
 		/// currently being used
@@ -116,7 +117,7 @@ namespace MyGame
 			}
 
 			_human = new Player (_theGame);
-
+			_count = 5;
 			// AddHandler _human.PlayerGrid.Changed, AddressOf GridChanged
 			_ai.PlayerGrid.Changed += GridChanged;
 			_theGame.AttackCompleted += AttackCompleted;
@@ -196,6 +197,7 @@ namespace MyGame
 			bool isHuman;
 			isHuman = _theGame.Player == HumanPlayer;
 
+
 			if (isHuman)
 				UtilityFunctions.Message = "You " + result.ToString ();
 			else
@@ -204,6 +206,7 @@ namespace MyGame
 			switch (result.Value) {
 			case ResultOfAttack.Destroyed: {
 					PlayHitSequence (result.Row, result.Column, isHuman);
+					_count--;
 					Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
 					break;
 				}
