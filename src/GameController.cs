@@ -29,8 +29,8 @@ namespace MyGame
 		private static Stack<GameState> _state = new Stack<GameState> ();
 
 		private static AIOption _aiSetting;
-
 		public static int _count;
+
 		/// <summary>
 		/// Returns the current state of the game, indicating which screen is
 		/// currently being used
@@ -117,11 +117,10 @@ namespace MyGame
 			}
 
 			_human = new Player (_theGame);
-			_count = 5;
 			// AddHandler _human.PlayerGrid.Changed, AddressOf GridChanged
 			_ai.PlayerGrid.Changed += GridChanged;
 			_theGame.AttackCompleted += AttackCompleted;
-
+			_count = 5;
 			AddNewState (GameState.Deploying);
 		}
 
@@ -195,18 +194,18 @@ namespace MyGame
 		private static void AttackCompleted (object sender, AttackResult result)
 		{
 			bool isHuman;
-			isHuman = _theGame.Player == HumanPlayer;
 
+			isHuman = _theGame.Player == HumanPlayer;
 
 			if (isHuman)
 				UtilityFunctions.Message = "You " + result.ToString ();
 			else
 				UtilityFunctions.Message = "The AI " + result.ToString ();
-
+			
 			switch (result.Value) {
 			case ResultOfAttack.Destroyed: {
 					PlayHitSequence (result.Row, result.Column, isHuman);
-					_count--;
+					_count --;
 					Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
 					break;
 				}
@@ -214,7 +213,6 @@ namespace MyGame
 			case ResultOfAttack.GameOver: {
 					PlayHitSequence (result.Row, result.Column, isHuman);
 					Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
-
 					while (Audio.SoundEffectPlaying (GameResources.GameSound ("Sink"))) {
 						SwinGame.Delay (10);
 						SwinGame.RefreshScreen ();
