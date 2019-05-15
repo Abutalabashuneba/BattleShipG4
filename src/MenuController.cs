@@ -28,7 +28,7 @@ namespace MyGame
 		/// <remarks>
 		/// These are the text captions for the menu items.
 		/// </remarks>
-		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "QUIT", "GUIDE" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
+		private readonly static string [] [] _menuStructure = new [] { new string [] { "PLAY", "SETUP", "SCORES", "GUIDE", "QUIT" }, new string [] { "RETURN", "SURRENDER", "QUIT" }, new string [] { "EASY", "MEDIUM", "HARD" } };
 
 		private const int MENU_TOP = 570;
 		private const int MENU_LEFT = 48;
@@ -45,9 +45,9 @@ namespace MyGame
 		private const int MAIN_MENU_PLAY_BUTTON = 0;
 		private const int MAIN_MENU_SETUP_BUTTON = 1;
 		private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
-		private const int MAIN_MENU_QUIT_BUTTON = 3;
+		private const int MAIN_MENU_QUIT_BUTTON = 4;
 		//Guide
-		private const int MAIN_MENU_GUIDE_BUTTON = 4;
+		private const int MAIN_MENU_GUIDE_BUTTON = 3;
 
 		private const int SETUP_MENU_EASY_BUTTON = 0;
 		private const int SETUP_MENU_MEDIUM_BUTTON = 1;
