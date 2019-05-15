@@ -204,10 +204,15 @@ namespace MyGame
 			
 			switch (result.Value) {
 			case ResultOfAttack.Destroyed: {
-					PlayHitSequence (result.Row, result.Column, isHuman);
-					_count --;
-					Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
-					break;
+					if (isHuman) {
+						PlayHitSequence (result.Row, result.Column, isHuman);
+						_count--;
+						Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
+					} else {
+						PlayHitSequence (result.Row, result.Column, isHuman);
+						Audio.PlaySoundEffect (GameResources.GameSound ("Sink"));
+					}
+						break;
 				}
 
 			case ResultOfAttack.GameOver: {
